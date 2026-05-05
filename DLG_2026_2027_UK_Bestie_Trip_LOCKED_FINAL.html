@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DLG: 2026/2027 UK Bestie Trip</title>
+<style>
+  :root {
+    --bg:#0b1220;
+    --card:#0f1a2d;
+    --ink:#eaf0ff;
+    --muted:#b8c4e6;
+    --line:rgba(255,255,255,0.12);
+    --pill:rgba(255,255,255,0.12);
+    --accent:#7c3aed;
+    --accent2:#0ea5e9;
+  }
+  body {
+    margin:0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    background: radial-gradient(1200px 800px at 10% 10%, rgba(124,58,237,0.25), transparent 60%),
+                radial-gradient(1000px 700px at 90% 0%, rgba(14,165,233,0.18), transparent 60%),
+                var(--bg);
+    color:var(--ink);
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 22px 18px 60px; }
+  .hero {
+    border-radius: 22px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+  }
+  .hero img { width:100%; display:block; }
+  .row { display:grid; grid-template-columns: 1fr; gap: 14px; margin-top: 16px; }
+  .card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 16px 16px;
+  }
+  .h2 {
+    font-size: 20px; margin: 0 0 8px; font-weight: 900; letter-spacing: 0.2px;
+  }
+  .p { margin: 8px 0; color: var(--muted); line-height: 1.55; }
+  .pill {
+    display:inline-block; padding: 8px 12px; border-radius: 999px;
+    background: var(--pill); border: 1px solid var(--line);
+    margin: 6px 8px 0 0; font-weight: 700; color: var(--ink); font-size: 13px;
+  }
+  a { color: #a7d8ff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .grid2 { display:grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 860px) { .grid2 { grid-template-columns: 1fr; } }
+  .attraction {
+    display:grid; grid-template-columns: 140px 1fr; gap: 14px; align-items: stretch;
+    border: 1px solid var(--line); border-radius: 16px; overflow: hidden;
+    background: rgba(0,0,0,0.18);
+  }
+  .attraction .img {
+    background: rgba(255,255,255,0.06);
+    display:flex; align-items:center; justify-content:center;
+    padding: 10px;
+  }
+  .attraction img { width: 120px; height: 120px; border-radius: 14px; border: 1px solid var(--line); }
+  .attraction .content { padding: 12px 12px 12px 0; }
+  .title { font-weight: 900; font-size: 16px; margin: 2px 0 4px; }
+  .meta { color: var(--muted); font-size: 13px; line-height: 1.4; }
+  table {
+    width:100%; border-collapse: collapse; margin-top: 10px; overflow:hidden;
+    border-radius: 14px; border: 1px solid var(--line);
+  }
+  th, td {
+    padding: 10px 10px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+    font-size: 13px;
+  }
+  th { text-align:left; background: rgba(255,255,255,0.06); font-weight: 900; }
+  tr:last-child td { border-bottom: none; }
+  .small { font-size: 12px; color: var(--muted); }
+  .foot { margin-top: 16px; color: var(--muted); font-size: 12px; }
+  .divider { height:1px; background: var(--line); margin: 14px 0; }
+  ul { margin: 8px 0 0 20px; padding: 0; color: var(--muted); line-height: 1.55; }
+  li { margin: 5px 0; }
+  .day-title { font-size: 18px; font-weight: 950; margin: 0 0 4px; }
+  .anchor { font-weight: 900; color: var(--ink); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero"><img alt="Trip hero with Union Jack, London Eye, and castle silhouette" src="data:image/svg+xml;base64,CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTIwMCA1MjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iMjAyNi8yMDI3IFVLIEJlc3RpZSBUcmlwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHgyPSIxIiB5MT0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM4YjVjZjYiIHN0b3Atb3BhY2l0eT0iLjk1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBlYTVlOSIgc3RvcC1vcGFjaXR5PSIuODUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9InIiIGN4PSI3MCUiIGN5PSIzMCUiIHI9IjcwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIuMjIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8ZmlsdGVyIGlkPSJzIiB4PSItMjAlIiB5PSItMjAlIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIj4KICAgICAgPGZlRHJvcFNoYWRvdyBkeD0iMCIgZHk9IjEwIiBzdGREZXZpYXRpb249IjE4IiBmbG9vZC1jb2xvcj0iIzAwMCIgZmxvb2Qtb3BhY2l0eT0iLjI1Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNTIwIiBmaWxsPSJ1cmwoI2cpIi8+CiAgPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNTIwIiBmaWxsPSJ1cmwoI3IpIi8+CgogIDwhLS0gc3VidGxlIHNreWxpbmUgLyBjYXN0bGUgLyBMb25kb24gRXllIC0tPgogIDxnIG9wYWNpdHk9Ii4yNyIgZmlsbD0iIzBiMTIyMCI+CiAgICA8cmVjdCB4PSIwIiB5PSIzNjUiIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjE1NSIvPgogICAgPHJlY3QgeD0iNzAiIHk9IjMwMiIgd2lkdGg9IjgyIiBoZWlnaHQ9IjIxOCIvPgogICAgPHJlY3QgeD0iMTgwIiB5PSIyODIiIHdpZHRoPSIxMDgiIGhlaWdodD0iMjM4Ii8+CiAgICA8cmVjdCB4PSIzMjAiIHk9IjMwNSIgd2lkdGg9Ijc4IiBoZWlnaHQ9IjIxNSIvPgogICAgPHJlY3QgeD0iNDMwIiB5PSIyNTAiIHdpZHRoPSIxMzgiIGhlaWdodD0iMjcwIi8+CiAgICA8cmVjdCB4PSI2MDAiIHk9IjI5MiIgd2lkdGg9Ijk2IiBoZWlnaHQ9IjIyOCIvPgogICAgPHJlY3QgeD0iNzI1IiB5PSIyNzAiIHdpZHRoPSIxNTUiIGhlaWdodD0iMjUwIi8+CiAgICA8cmVjdCB4PSI5MTAiIHk9IjMwMiIgd2lkdGg9IjEwMiIgaGVpZ2h0PSIyMTgiLz4KICAgIDxyZWN0IHg9IjEwNDAiIHk9IjI4NCIgd2lkdGg9IjEzMiIgaGVpZ2h0PSIyMzYiLz4KICA8L2c+CgogIDwhLS0gY2FzdGxlIHNpbGhvdWV0dGUgLS0+CiAgPGcgZmlsbD0iIzBiMTIyMCIgb3BhY2l0eT0iLjQ1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3ODAsMjEwKSI+CiAgICA8cmVjdCB4PSIwIiB5PSIxMTAiIHdpZHRoPSIzMDAiIGhlaWdodD0iOTAiLz4KICAgIDxyZWN0IHg9IjI1IiB5PSI2MCIgd2lkdGg9IjU1IiBoZWlnaHQ9IjE0MCIvPgogICAgPHJlY3QgeD0iMTI1IiB5PSIzNSIgd2lkdGg9IjYwIiBoZWlnaHQ9IjE2NSIvPgogICAgPHJlY3QgeD0iMjMwIiB5PSI3MCIgd2lkdGg9IjUwIiBoZWlnaHQ9IjEzMCIvPgogICAgPHBvbHlnb24gcG9pbnRzPSIyNSw2MCA1MiwyOCA4MCw2MCIvPgogICAgPHBvbHlnb24gcG9pbnRzPSIxMjUsMzUgMTU1LDAgMTg1LDM1Ii8+CiAgICA8cG9seWdvbiBwb2ludHM9IjIzMCw3MCAyNTUsNDIgMjgwLDcwIi8+CiAgICA8cmVjdCB4PSI5NSIgeT0iOTUiIHdpZHRoPSIxMTUiIGhlaWdodD0iMTA1Ii8+CiAgICA8cG9seWdvbiBwb2ludHM9Ijk1LDk1IDE1Miw1OCAyMTAsOTUiLz4KICA8L2c+CgogIDwhLS0gVW5pb24gSmFjayBmbGFnIHNoaWVsZCAtLT4KICA8ZyBmaWx0ZXI9InVybCgjcykiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcyLDgyKSI+CiAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTkwIiBoZWlnaHQ9IjEyMCIgcng9IjIwIiBmaWxsPSIjMTIzYjhmIiBvcGFjaXR5PSIuOTgiLz4KICAgIDxjbGlwUGF0aCBpZD0iZmxhZ2NsaXAiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxOTAiIGhlaWdodD0iMTIwIiByeD0iMjAiLz48L2NsaXBQYXRoPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI2ZsYWdjbGlwKSI+CiAgICAgIDxwYXRoIGQ9Ik0wIDAgTDE5MCAxMjAgTTE5MCAwIEwwIDEyMCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjI4Ii8+CiAgICAgIDxwYXRoIGQ9Ik0wIDAgTDE5MCAxMjAgTTE5MCAwIEwwIDEyMCIgc3Ryb2tlPSIjZDkxZjNjIiBzdHJva2Utd2lkdGg9IjEzIi8+CiAgICAgIDxwYXRoIGQ9Ik05NSAwIFYxMjAgTTAgNjAgSDE5MCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjQyIi8+CiAgICAgIDxwYXRoIGQ9Ik05NSAwIFYxMjAgTTAgNjAgSDE5MCIgc3Ryb2tlPSIjZDkxZjNjIiBzdHJva2Utd2lkdGg9IjIzIi8+CiAgICA8L2c+CiAgPC9nPgoKICA8IS0tIExvbmRvbiBFeWUgc2lsaG91ZXR0ZSAtLT4KICA8ZyBmaWx0ZXI9InVybCgjcykiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDkyLDI0NSkiPgogICAgPGNpcmNsZSBjeD0iOTQiIGN5PSI5NCIgcj0iODgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI5IiBvcGFjaXR5PSIuNzgiLz4KICAgIDxjaXJjbGUgY3g9Ijk0IiBjeT0iOTQiIHI9IjgiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii44NSIvPgogICAgPGxpbmUgeDE9Ijk0IiB5MT0iNiIgeDI9Ijk0IiB5Mj0iMTgyIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNCIgb3BhY2l0eT0iLjM4Ii8+CiAgICA8bGluZSB4MT0iNiIgeTE9Ijk0IiB4Mj0iMTgyIiB5Mj0iOTQiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI0IiBvcGFjaXR5PSIuMzgiLz4KICAgIDxsaW5lIHgxPSIzMiIgeTE9IjMyIiB4Mj0iMTU2IiB5Mj0iMTU2IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNCIgb3BhY2l0eT0iLjMiLz4KICAgIDxsaW5lIHgxPSIxNTYiIHkxPSIzMiIgeDI9IjMyIiB5Mj0iMTU2IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNCIgb3BhY2l0eT0iLjMiLz4KICA8L2c+CgogIDwhLS0gdGl0bGUgc2FmZS1tYXJnaW5lZCAtLT4KICA8dGV4dCB4PSIzMzAiIHk9IjE1NSIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgU2Vnb2UgVUksIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCIgZm9udC1zaXplPSI0OCIgZmlsbD0iI2ZmZiIgZm9udC13ZWlnaHQ9Ijg1MCI+8J+HrPCfh6cgMjAyNi8yMDI3IFVLIEJlc3RpZSBUcmlwPC90ZXh0PgogIDx0ZXh0IHg9IjMzMCIgeT0iMjE1IiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBTZWdvZSBVSSwgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsIiBmb250LXNpemU9IjI5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTIiIGZvbnQtd2VpZ2h0PSI2MDAiPkRlYyAyNyDigJMgSmFuIDgg4oCiIDExIG5pZ2h0cyDigKIgMiBiZXN0aWVzIOKAoiBmbGV4aWJsZSBiZWRzPC90ZXh0PgoKICA8ZyBmb250LWZhbWlseT0ic3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBTZWdvZSBVSSwgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsIiBmb250LXNpemU9IjIxIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTIiIGZvbnQtd2VpZ2h0PSI3MDAiPgogICAgPHJlY3QgeD0iMzMwIiB5PSIzMDAiIHJ4PSIyMiIgcnk9IjIyIiB3aWR0aD0iMjEwIiBoZWlnaHQ9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTYiLz4KICAgIDx0ZXh0IHg9IjM1NyIgeT0iMzMwIj5Ib2dtYW5heSDinKg8L3RleHQ+CiAgICA8cmVjdCB4PSI1NTgiIHk9IjMwMCIgcng9IjIyIiByeT0iMjIiIHdpZHRoPSIyMzAiIGhlaWdodD0iNDQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4xNiIvPgogICAgPHRleHQgeD0iNTg2IiB5PSIzMzAiPkljb25pYyArIGxvY2FsPC90ZXh0PgogICAgPHJlY3QgeD0iODA4IiB5PSIzMDAiIHJ4PSIyMiIgcnk9IjIyIiB3aWR0aD0iMjQ1IiBoZWlnaHQ9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTYiLz4KICAgIDx0ZXh0IHg9IjgzOCIgeT0iMzMwIj5TbWFydCBwYWNpbmc8L3RleHQ+CiAgPC9nPgo8L3N2Zz4K"/></div>
+
+    <div class="row">
+      <div class="card">
+        <div class="h2">🔥 Quick vibe check (so we book the right things)</div>
+        <div class="p">Locked structure: <b>IAH evening Dec 27 → Edinburgh arrival Dec 28 → train to London Jan 2 → Heathrow hotel Jan 7 → fly home Jan 8</b>. This version keeps the trip immersive, stylish, and specific — with anchors, nearby highlights, walking order, reset windows, and booking links.</div>
+        <span class="pill">5 nights Edinburgh + 5 nights London + 1 Heathrow night</span>
+        <span class="pill">Hogmanay: YES 🎆</span>
+        <span class="pill">Anchor + mapped supports daily</span>
+        <span class="pill">Budget target: $4K–$6K pp</span>
+      </div>
+
+      <div class="card">
+        <div class="h2">🇬🇧 UK Must-See shortlist</div>
+        <div class="p"><b>Locked priorities:</b> Edinburgh Old Town, Hogmanay, Harris Tweed workshop, ghost tour, London Eye, Natural History Museum, ABBA Voyage, Ham Yard afternoon tea, cool neighborhoods, markets, and authentic shopping.</div>
+
+        <div class="grid2">
+          <div class="attraction">
+            <div class="img"><img alt="Icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDUyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLwn4+wIEVkaW5idXJnaCBPbGQgVG93biI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHgyPSIxIiB5MT0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzhiNWNmNiIgc3RvcC1vcGFjaXR5PSIuOTUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwZWE1ZTkiIHN0b3Atb3BhY2l0eT0iLjg1Ii8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9InIiIGN4PSI3MCUiIGN5PSIzMCUiIHI9IjcwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4yMiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+PC9yYWRpYWxHcmFkaWVudD48ZmlsdGVyIGlkPSJzIiB4PSItMjAlIiB5PSItMjAlIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIj48ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iMTAiIHN0ZERldmlhdGlvbj0iMTgiIGZsb29kLWNvbG9yPSIjMDAwIiBmbG9vZC1vcGFjaXR5PSIuMjUiLz48L2ZpbHRlcj48L2RlZnM+CjxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjUyMCIgZmlsbD0idXJsKCNnKSIvPjxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjUyMCIgZmlsbD0idXJsKCNyKSIvPgo8ZyBvcGFjaXR5PSIuMjUiIGZpbGw9IiMwYjEyMjAiPjxyZWN0IHg9IjAiIHk9IjM2MCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iMTYwIi8+PHJlY3QgeD0iNjAiIHk9IjMwMCIgd2lkdGg9IjkwIiBoZWlnaHQ9IjIyMCIvPjxyZWN0IHg9IjE3MCIgeT0iMjYwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI2MCIvPjxyZWN0IHg9IjMxMCIgeT0iMjgwIiB3aWR0aD0iNzUiIGhlaWdodD0iMjQwIi8+PHJlY3QgeD0iNDEwIiB5PSIyNDAiIHdpZHRoPSIxNDAiIGhlaWdodD0iMjgwIi8+PHJlY3QgeD0iNTcwIiB5PSIyODUiIHdpZHRoPSI5NSIgaGVpZ2h0PSIyMzUiLz48cmVjdCB4PSI2OTAiIHk9IjI1NSIgd2lkdGg9IjE1NSIgaGVpZ2h0PSIyNjUiLz48cmVjdCB4PSI4NzAiIHk9IjI5NSIgd2lkdGg9IjEwNSIgaGVpZ2h0PSIyMjUiLz48cmVjdCB4PSIxMDAwIiB5PSIyNzAiIHdpZHRoPSIxNDAiIGhlaWdodD0iMjUwIi8+PC9nPgo8ZyBmaWx0ZXI9InVybCgjcykiPjxjaXJjbGUgY3g9IjE3MCIgY3k9IjE4MCIgcj0iMTIwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTYiLz48Y2lyY2xlIGN4PSIxNzAiIGN5PSIxODAiIHI9IjkyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMTAiIG9wYWNpdHk9Ii43Ii8+PHRleHQgeD0iMTIzIiB5PSIyMDIiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWkiIGZvbnQtc2l6ZT0iNjgiIGZpbGw9IiNmZmYiPvCfj7A8L3RleHQ+PC9nPgo8dGV4dCB4PSIzNDAiIHk9IjE3MCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgU2Vnb2UgVUksIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCIgZm9udC1zaXplPSI1NiIgZmlsbD0iI2ZmZiIgZm9udC13ZWlnaHQ9IjgwMCI+8J+PsCBFZGluYnVyZ2ggT2xkIFRvd248L3RleHQ+Cjx0ZXh0IHg9IjM0MCIgeT0iMjM1IiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBTZWdvZSBVSSwgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsIiBmb250LXNpemU9IjMwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTIiIGZvbnQtd2VpZ2h0PSI2MDAiPlJveWFsIE1pbGUgKyBjYXN0bGUgdmlld3M8L3RleHQ+CjxnIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIFNlZ29lIFVJLCBSb2JvdG8sIEhlbHZldGljYSwgQXJpYWwiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii45MiIgZm9udC13ZWlnaHQ9IjcwMCI+PHJlY3QgeD0iMzQwIiB5PSIzMTAiIHJ4PSIyMiIgcnk9IjIyIiB3aWR0aD0iMjEwIiBoZWlnaHQ9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTYiLz48dGV4dCB4PSIzNjUiIHk9IjM0MCI+Qm9vayBhaGVhZDwvdGV4dD48cmVjdCB4PSI1NjUiIHk9IjMxMCIgcng9IjIyIiByeT0iMjIiIHdpZHRoPSIyMTAiIGhlaWdodD0iNDQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4xNiIvPjx0ZXh0IHg9IjU5NSIgeT0iMzQwIj5Mb3cgc3RyZXNzPC90ZXh0PjxyZWN0IHg9Ijc5MCIgeT0iMzEwIiByeD0iMjIiIHJ5PSIyMiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI0NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjE2Ii8+PHRleHQgeD0iODE4IiB5PSIzNDAiPkJlc3RpZS1hcHByb3ZlZDwvdGV4dD48L2c+Cjwvc3ZnPg=="></div>
+            <div class="content">
+              <div class="title">🏰 Edinburgh Old Town</div>
+              <div class="meta">Your Airbnb is in the exact zone where Edinburgh feels most cinematic: castle views, medieval lanes, Grassmarket pubs, and artisan shops.<br>
+              🔗 <a href="https://edinburgh.org/">Official / booking link</a> • 💰 Mostly free</div>
+            </div>
+          </div>
+          <div class="attraction">
+            <div class="img"><img alt="Icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDUyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLwn46GIEhvZ21hbmF5Ij4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeDI9IjEiIHkxPSIwIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjk3MzE2IiBzdG9wLW9wYWNpdHk9Ii45NSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBlYTVlOSIgc3RvcC1vcGFjaXR5PSIuODUiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iciIgY3g9IjcwJSIgY3k9IjMwJSIgcj0iNzAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjIyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjxmaWx0ZXIgaWQ9InMiIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2QtY29sb3I9IiMwMDAiIGZsb29kLW9wYWNpdHk9Ii4yNSIvPjwvZmlsdGVyPjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNTIwIiBmaWxsPSJ1cmwoI2cpIi8+PHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNTIwIiBmaWxsPSJ1cmwoI3IpIi8+CjxnIG9wYWNpdHk9Ii4yNSIgZmlsbD0iIzBiMTIyMCI+PHJlY3QgeD0iMCIgeT0iMzYwIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIxNjAiLz48cmVjdCB4PSI2MCIgeT0iMzAwIiB3aWR0aD0iOTAiIGhlaWdodD0iMjIwIi8+PHJlY3QgeD0iMTcwIiB5PSIyNjAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjYwIi8+PHJlY3QgeD0iMzEwIiB5PSIyODAiIHdpZHRoPSI3NSIgaGVpZ2h0PSIyNDAiLz48cmVjdCB4PSI0MTAiIHk9IjI0MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyODAiLz48cmVjdCB4PSI1NzAiIHk9IjI4NSIgd2lkdGg9Ijk1IiBoZWlnaHQ9IjIzNSIvPjxyZWN0IHg9IjY5MCIgeT0iMjU1IiB3aWR0aD0iMTU1IiBoZWlnaHQ9IjI2NSIvPjxyZWN0IHg9Ijg3MCIgeT0iMjk1IiB3aWR0aD0iMTA1IiBoZWlnaHQ9IjIyNSIvPjxyZWN0IHg9IjEwMDAiIHk9IjI3MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyNTAiLz48L2c+CjxnIGZpbHRlcj0idXJsKCNzKSI+PGNpcmNsZSBjeD0iMTcwIiBjeT0iMTgwIiByPSIxMjAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4xNiIvPjxjaXJjbGUgY3g9IjE3MCIgY3k9IjE4MCIgcj0iOTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxMCIgb3BhY2l0eT0iLjciLz48dGV4dCB4PSIxMjMiIHk9IjIwMiIgZm9udC1mYW1pbHk9InN5c3RlbS11aSIgZm9udC1zaXplPSI2OCIgZmlsbD0iI2ZmZiI+8J+OhjwvdGV4dD48L2c+Cjx0ZXh0IHg9IjM0MCIgeT0iMTcwIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBTZWdvZSBVSSwgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsIiBmb250LXNpemU9IjU2IiBmaWxsPSIjZmZmIiBmb250LXdlaWdodD0iODAwIj7wn46GIEhvZ21hbmF5PC90ZXh0Pgo8dGV4dCB4PSIzNDAiIHk9IjIzNSIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgU2Vnb2UgVUksIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCIgZm9udC1zaXplPSIzMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjkyIiBmb250LXdlaWdodD0iNjAwIj5OWUUgaW4gRWRpbmJ1cmdoPC90ZXh0Pgo8ZyBmb250LWZhbWlseT0ic3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBTZWdvZSBVSSwgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsIiBmb250LXNpemU9IjIyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTIiIGZvbnQtd2VpZ2h0PSI3MDAiPjxyZWN0IHg9IjM0MCIgeT0iMzEwIiByeD0iMjIiIHJ5PSIyMiIgd2lkdGg9IjIxMCIgaGVpZ2h0PSI0NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjE2Ii8+PHRleHQgeD0iMzY1IiB5PSIzNDAiPkJvb2sgYWhlYWQ8L3RleHQ+PHJlY3QgeD0iNTY1IiB5PSIzMTAiIHJ4PSIyMiIgcnk9IjIyIiB3aWR0aD0iMjEwIiBoZWlnaHQ9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTYiLz48dGV4dCB4PSI1OTUiIHk9IjM0MCI+TG93IHN0cmVzczwvdGV4dD48cmVjdCB4PSI3OTAiIHk9IjMxMCIgcng9IjIyIiByeT0iMjIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNDQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4xNiIvPjx0ZXh0IHg9IjgxOCIgeT0iMzQwIj5CZXN0aWUtYXBwcm92ZWQ8L3RleHQ+PC9nPgo8L3N2Zz4="></div>
+            <div class="content">
+              <div class="title">🎆 Hogmanay</div>
+              <div class="meta">The trip’s signature holiday moment. Choose the high-energy Street Party or a more controlled dinner + fireworks strategy.<br>
+              🔗 <a href="https://www.edinburghshogmanay.com/">Official / booking link</a> • 💰 Ticketed</div>
+            </div>
+          </div>
+          <div class="attraction">
+            <div class="img"><img alt="Icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDUyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLwn5GcIElzbGFuZGVyIFdvcmtzaG9wIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeDI9IjEiIHkxPSIwIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYTg1NWY3IiBzdG9wLW9wYWNpdHk9Ii45NSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBlYTVlOSIgc3RvcC1vcGFjaXR5PSIuODUiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iciIgY3g9IjcwJSIgY3k9IjMwJSIgcj0iNzAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjIyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjxmaWx0ZXIgaWQ9InMiIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2QtY29sb3I9IiMwMDAiIGZsb29kLW9wYWNpdHk9Ii4yNSIvPjwvZmlsdGVyPjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNTIwIiBmaWxsPSJ1cmwoI2cpIi8+PHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNTIwIiBmaWxsPSJ1cmwoI3IpIi8+CjxnIG9wYWNpdHk9Ii4yNSIgZmlsbD0iIzBiMTIyMCI+PHJlY3QgeD0iMCIgeT0iMzYwIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIxNjAiLz48cmVjdCB4PSI2MCIgeT0iMzAwIiB3aWR0aD0iOTAiIGhlaWdodD0iMjIwIi8+PHJlY3QgeD0iMTcwIiB5PSIyNjAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjYwIi8+PHJlY3QgeD0iMzEwIiB5PSIyODAiIHdpZHRoPSI3NSIgaGVpZ2h0PSIyNDAiLz48cmVjdCB4PSI0MTAiIHk9IjI0MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyODAiLz48cmVjdCB4PSI1NzAiIHk9IjI4NSIgd2lkdGg9Ijk1IiBoZWlnaHQ9IjIzNSIvPjxyZWN0IHg9IjY5MCIgeT0iMjU1IiB3aWR0aD0iMTU1IiBoZWlnaHQ9IjI2NSIvPjxyZWN0IHg9Ijg3MCIgeT0iMjk1IiB3aWR0aD0iMTA1IiBoZWlnaHQ9IjIyNSIvPjxyZWN0IHg9IjEwMDAiIHk9IjI3MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyNTAiLz48L2c+CjxnIGZpbHRlcj0idXJsKCNzKSI+PGNpcmNsZSBjeD0iMTcwIiBjeT0iMTgwIiByPSIxMjAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4xNiIvPjxjaXJjbGUgY3g9IjE3MCIgY3k9IjE4MCIgcj0iOTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxMCIgb3BhY2l0eT0iLjciLz48dGV4dCB4PSIxMjMiIHk9IjIwMiIgZm9udC1mYW1pbHk9InN5c3RlbS11aSIgZm9udC1zaXplPSI2OCIgZmlsbD0iI2ZmZiI+8J+RnDwvdGV4dD48L2c+Cjx0ZXh0IHg9IjM0MCIgeT0iMTcwIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBTZWdvZSBVSSwgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsIiBmb250LXNpemU9IjU2IiBmaWxsPSIjZmZmIiBmb250LXdlaWdodD0iODAwIj7wn5GcIElzbGFuZGVyIFdvcmtzaG9wPC90ZXh0Pgo8dGV4dCB4PSIzNDAiIHk9IjIzNSIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgU2Vnb2UgVUksIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCIgZm9udC1zaXplPSIzMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjkyIiBmb250LXdlaWdodD0iNjAwIj5IYXJyaXMgVHdlZWQgbWVtb3J5PC90ZXh0Pgo8ZyBmb250LWZhbWlseT0ic3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBTZWdvZSBVSSwgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsIiBmb250LXNpemU9IjIyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTIiIGZvbnQtd2VpZ2h0PSI3MDAiPjxyZWN0IHg9IjM0MCIgeT0iMzEwIiByeD0iMjIiIHJ5PSIyMiIgd2lkdGg9IjIxMCIgaGVpZ2h0PSI0NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjE2Ii8+PHRleHQgeD0iMzY1IiB5PSIzNDAiPkJvb2sgYWhlYWQ8L3RleHQ+PHJlY3QgeD0iNTY1IiB5PSIzMTAiIHJ4PSIyMiIgcnk9IjIyIiB3aWR0aD0iMjEwIiBoZWlnaHQ9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTYiLz48dGV4dCB4PSI1OTUiIHk9IjM0MCI+TG93IHN0cmVzczwvdGV4dD48cmVjdCB4PSI3OTAiIHk9IjMxMCIgcng9IjIyIiByeT0iMjIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNDQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4xNiIvPjx0ZXh0IHg9IjgxOCIgeT0iMzQwIj5CZXN0aWUtYXBwcm92ZWQ8L3RleHQ+PC9nPgo8L3N2Zz4="></div>
+            <div class="content">
+              <div class="title">👜 Islander Workshop</div>
+              <div class="meta">The most Patty-coded Edinburgh souvenir: interactive, local, and something you actually keep.<br>
+              🔗 <a href="https://islanderuk.com/pages/in-store-experience">Official / booking link</a> • 💰 Ticketed workshop</div>
+            </div>
+          </div>
+          <div class="attraction">
+            <div class="img"><img alt="Icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDUyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLwn5G7IEdob3N0IFRvdXIiPgo8ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB4Mj0iMSIgeTE9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzMzQxNTUiIHN0b3Atb3BhY2l0eT0iLjk1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGVhNWU5IiBzdG9wLW9wYWNpdHk9Ii44NSIvPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJyIiBjeD0iNzAlIiBjeT0iMzAlIiByPSI3MCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIuMjIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGZpbHRlciBpZD0icyIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSI+PGZlRHJvcFNoYWRvdyBkeD0iMCIgZHk9IjEwIiBzdGREZXZpYXRpb249IjE4IiBmbG9vZC1jb2xvcj0iIzAwMCIgZmxvb2Qtb3BhY2l0eT0iLjI1Ii8+PC9maWx0ZXI+PC9kZWZzPgo8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI1MjAiIGZpbGw9InVybCgjZykiLz48cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI1MjAiIGZpbGw9InVybCgjcikiLz4KPGcgb3BhY2l0eT0iLjI1IiBmaWxsPSIjMGIxMjIwIj48cmVjdCB4PSIwIiB5PSIzNjAiIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjE2MCIvPjxyZWN0IHg9IjYwIiB5PSIzMDAiIHdpZHRoPSI5MCIgaGVpZ2h0PSIyMjAiLz48cmVjdCB4PSIxNzAiIHk9IjI2MCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNjAiLz48cmVjdCB4PSIzMTAiIHk9IjI4MCIgd2lkdGg9Ijc1IiBoZWlnaHQ9IjI0MCIvPjxyZWN0IHg9IjQxMCIgeT0iMjQwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjI4MCIvPjxyZWN0IHg9IjU3MCIgeT0iMjg1IiB3aWR0aD0iOTUiIGhlaWdodD0iMjM1Ii8+PHJlY3QgeD0iNjkwIiB5PSIyNTUiIHdpZHRoPSIxNTUiIGhlaWdodD0iMjY1Ii8+PHJlY3QgeD0iODcwIiB5PSIyOTUiIHdpZHRoPSIxMDUiIGhlaWdodD0iMjI1Ii8+PHJlY3QgeD0iMTAwMCIgeT0iMjcwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjI1MCIvPjwvZz4KPGcgZmlsdGVyPSJ1cmwoI3MpIj48Y2lyY2xlIGN4PSIxNzAiIGN5PSIxODAiIHI9IjEyMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjE2Ii8+PGNpcmNsZSBjeD0iMTcwIiBjeT0iMTgwIiByPSI5MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIiBvcGFjaXR5PSIuNyIvPjx0ZXh0IHg9IjEyMyIgeT0iMjAyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjY4IiBmaWxsPSIjZmZmIj7wn5G7PC90ZXh0PjwvZz4KPHRleHQgeD0iMzQwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIFNlZ29lIFVJLCBSb2JvdG8sIEhlbHZldGljYSwgQXJpYWwiIGZvbnQtc2l6ZT0iNTYiIGZpbGw9IiNmZmYiIGZvbnQtd2VpZ2h0PSI4MDAiPvCfkbsgR2hvc3QgVG91cjwvdGV4dD4KPHRleHQgeD0iMzQwIiB5PSIyMzUiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIFNlZ29lIFVJLCBSb2JvdG8sIEhlbHZldGljYSwgQXJpYWwiIGZvbnQtc2l6ZT0iMzAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii45MiIgZm9udC13ZWlnaHQ9IjYwMCI+T2xkIFRvd24gYWZ0ZXIgZGFyazwvdGV4dD4KPGcgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgU2Vnb2UgVUksIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCIgZm9udC1zaXplPSIyMiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjkyIiBmb250LXdlaWdodD0iNzAwIj48cmVjdCB4PSIzNDAiIHk9IjMxMCIgcng9IjIyIiByeT0iMjIiIHdpZHRoPSIyMTAiIGhlaWdodD0iNDQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4xNiIvPjx0ZXh0IHg9IjM2NSIgeT0iMzQwIj5Cb29rIGFoZWFkPC90ZXh0PjxyZWN0IHg9IjU2NSIgeT0iMzEwIiByeD0iMjIiIHJ5PSIyMiIgd2lkdGg9IjIxMCIgaGVpZ2h0PSI0NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjE2Ii8+PHRleHQgeD0iNTk1IiB5PSIzNDAiPkxvdyBzdHJlc3M8L3RleHQ+PHJlY3QgeD0iNzkwIiB5PSIzMTAiIHJ4PSIyMiIgcnk9IjIyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTYiLz48dGV4dCB4PSI4MTgiIHk9IjM0MCI+QmVzdGllLWFwcHJvdmVkPC90ZXh0PjwvZz4KPC9zdmc+"></div>
+            <div class="content">
+              <div class="title">👻 Edinburgh Ghost Tour</div>
+              <div class="meta">Best done as a storytelling-heavy evening walk, not a cheesy jump-scare production.<br>
+              🔗 <a href="https://www.getyourguide.com/edinburgh-l44/ghost-tour/">Official / booking link</a> • 💰 ~$25–$40</div>
+            </div>
+          </div>
+          <div class="attraction">
+            <div class="img"><img alt="Icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDUyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLwn46hIExvbmRvbiBFeWUiPgo8ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB4Mj0iMSIgeTE9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmOTczMTYiIHN0b3Atb3BhY2l0eT0iLjk1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGVhNWU5IiBzdG9wLW9wYWNpdHk9Ii44NSIvPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJyIiBjeD0iNzAlIiBjeT0iMzAlIiByPSI3MCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIuMjIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGZpbHRlciBpZD0icyIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSI+PGZlRHJvcFNoYWRvdyBkeD0iMCIgZHk9IjEwIiBzdGREZXZpYXRpb249IjE4IiBmbG9vZC1jb2xvcj0iIzAwMCIgZmxvb2Qtb3BhY2l0eT0iLjI1Ii8+PC9maWx0ZXI+PC9kZWZzPgo8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI1MjAiIGZpbGw9InVybCgjZykiLz48cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI1MjAiIGZpbGw9InVybCgjcikiLz4KPGcgb3BhY2l0eT0iLjI1IiBmaWxsPSIjMGIxMjIwIj48cmVjdCB4PSIwIiB5PSIzNjAiIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjE2MCIvPjxyZWN0IHg9IjYwIiB5PSIzMDAiIHdpZHRoPSI5MCIgaGVpZ2h0PSIyMjAiLz48cmVjdCB4PSIxNzAiIHk9IjI2MCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIyNjAiLz48cmVjdCB4PSIzMTAiIHk9IjI4MCIgd2lkdGg9Ijc1IiBoZWlnaHQ9IjI0MCIvPjxyZWN0IHg9IjQxMCIgeT0iMjQwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjI4MCIvPjxyZWN0IHg9IjU3MCIgeT0iMjg1IiB3aWR0aD0iOTUiIGhlaWdodD0iMjM1Ii8+PHJlY3QgeD0iNjkwIiB5PSIyNTUiIHdpZHRoPSIxNTUiIGhlaWdodD0iMjY1Ii8+PHJlY3QgeD0iODcwIiB5PSIyOTUiIHdpZHRoPSIxMDUiIGhlaWdodD0iMjI1Ii8+PHJlY3QgeD0iMTAwMCIgeT0iMjcwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjI1MCIvPjwvZz4KPGcgZmlsdGVyPSJ1cmwoI3MpIj48Y2lyY2xlIGN4PSIxNzAiIGN5PSIxODAiIHI9IjEyMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjE2Ii8+PGNpcmNsZSBjeD0iMTcwIiBjeT0iMTgwIiByPSI5MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIiBvcGFjaXR5PSIuNyIvPjx0ZXh0IHg9IjEyMyIgeT0iMjAyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjY4IiBmaWxsPSIjZmZmIj7wn46hPC90ZXh0PjwvZz4KPHRleHQgeD0iMzQwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIFNlZ29lIFVJLCBSb2JvdG8sIEhlbHZldGljYSwgQXJpYWwiIGZvbnQtc2l6ZT0iNTYiIGZpbGw9IiNmZmYiIGZvbnQtd2VpZ2h0PSI4MDAiPvCfjqEgTG9uZG9uIEV5ZTwvdGV4dD4KPHRleHQgeD0iMzQwIiB5PSIyMzUiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIFNlZ29lIFVJLCBSb2JvdG8sIEhlbHZldGljYSwgQXJpYWwiIGZvbnQtc2l6ZT0iMzAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii45MiIgZm9udC13ZWlnaHQ9IjYwMCI+R29sZGVuLWhvdXIgdmlld3M8L3RleHQ+CjxnIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIFNlZ29lIFVJLCBSb2JvdG8sIEhlbHZldGljYSwgQXJpYWwiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii45MiIgZm9udC13ZWlnaHQ9IjcwMCI+PHJlY3QgeD0iMzQwIiB5PSIzMTAiIHJ4PSIyMiIgcnk9IjIyIiB3aWR0aD0iMjEwIiBoZWlnaHQ9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTYiLz48dGV4dCB4PSIzNjUiIHk9IjM0MCI+Qm9vayBhaGVhZDwvdGV4dD48cmVjdCB4PSI1NjUiIHk9IjMxMCIgcng9IjIyIiByeT0iMjIiIHdpZHRoPSIyMTAiIGhlaWdodD0iNDQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4xNiIvPjx0ZXh0IHg9IjU5NSIgeT0iMzQwIj5Mb3cgc3RyZXNzPC90ZXh0PjxyZWN0IHg9Ijc5MCIgeT0iMzEwIiByeD0iMjIiIHJ5PSIyMiIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI0NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjE2Ii8+PHRleHQgeD0iODE4IiB5PSIzNDAiPkJlc3RpZS1hcHByb3ZlZDwvdGV4dD48L2c+Cjwvc3ZnPg=="></div>
+            <div class="content">
+              <div class="title">🎡 London Eye</div>
+              <div class="meta">Touristy, yes. Worth it, also yes. Book sunset or dusk and use Fast Track if the holiday crowds look heavy.<br>
+              🔗 <a href="https://www.londoneye.com/tickets-and-prices/">Official / booking link</a> • 💰 ~£33–£55</div>
+            </div>
+          </div>
+          <div class="attraction">
+            <div class="img"><img alt="Icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDUyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLwn4+bIE5hdHVyYWwgSGlzdG9yeSI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHgyPSIxIiB5MT0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzM4YmRmOCIgc3RvcC1vcGFjaXR5PSIuOTUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwZWE1ZTkiIHN0b3Atb3BhY2l0eT0iLjg1Ii8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9InIiIGN4PSI3MCUiIGN5PSIzMCUiIHI9IjcwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4yMiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+PC9yYWRpYWxHcmFkaWVudD48ZmlsdGVyIGlkPSJzIiB4PSItMjAlIiB5PSItMjAlIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIj48ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iMTAiIHN0ZERldmlhdGlvbj0iMTgiIGZsb29kLWNvbG9yPSIjMDAwIiBmbG9vZC1vcGFjaXR5PSIuMjUiLz48L2ZpbHRlcj48L2RlZnM+CjxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjUyMCIgZmlsbD0idXJsKCNnKSIvPjxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjUyMCIgZmlsbD0idXJsKCNyKSIvPgo8ZyBvcGFjaXR5PSIuMjUiIGZpbGw9IiMwYjEyMjAiPjxyZWN0IHg9IjAiIHk9IjM2MCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iMTYwIi8+PHJlY3QgeD0iNjAiIHk9IjMwMCIgd2lkdGg9IjkwIiBoZWlnaHQ9IjIyMCIvPjxyZWN0IHg9IjE3MCIgeT0iMjYwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI2MCIvPjxyZWN0IHg9IjMxMCIgeT0iMjgwIiB3aWR0aD0iNzUiIGhlaWdodD0iMjQwIi8+PHJlY3QgeD0iNDEwIiB5PSIyNDAiIHdpZHRoPSIxNDAiIGhlaWdodD0iMjgwIi8+PHJlY3QgeD0iNTcwIiB5PSIyODUiIHdpZHRoPSI5NSIgaGVpZ2h0PSIyMzUiLz48cmVjdCB4PSI2OTAiIHk9IjI1NSIgd2lkdGg9IjE1NSIgaGVpZ2h0PSIyNjUiLz48cmVjdCB4PSI4NzAiIHk9IjI5NSIgd2lkdGg9IjEwNSIgaGVpZ2h0PSIyMjUiLz48cmVjdCB4PSIxMDAwIiB5PSIyNzAiIHdpZHRoPSIxNDAiIGhlaWdodD0iMjUwIi8+PC9nPgo8ZyBmaWx0ZXI9InVybCgjcykiPjxjaXJjbGUgY3g9IjE3MCIgY3k9IjE4MCIgcj0iMTIwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTYiLz48Y2lyY2xlIGN4PSIxNzAiIGN5PSIxODAiIHI9IjkyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMTAiIG9wYWNpdHk9Ii43Ii8+PHRleHQgeD0iMTIzIiB5PSIyMDIiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWkiIGZvbnQtc2l6ZT0iNjgiIGZpbGw9IiNmZmYiPvCfj5s8L3RleHQ+PC9nPgo8dGV4dCB4PSIzNDAiIHk9IjE3MCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgU2Vnb2UgVUksIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCIgZm9udC1zaXplPSI1NiIgZmlsbD0iI2ZmZiIgZm9udC13ZWlnaHQ9IjgwMCI+8J+PmyBOYXR1cmFsIEhpc3Rvcnk8L3RleHQ+Cjx0ZXh0IHg9IjM0MCIgeT0iMjM1IiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBTZWdvZSBVSSwgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsIiBmb250LXNpemU9IjMwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTIiIGZvbnQtd2VpZ2h0PSI2MDAiPkFyY2hpdGVjdHVyZSArIGRpbm9zYXVyczwvdGV4dD4KPGcgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgU2Vnb2UgVUksIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCIgZm9udC1zaXplPSIyMiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjkyIiBmb250LXdlaWdodD0iNzAwIj48cmVjdCB4PSIzNDAiIHk9IjMxMCIgcng9IjIyIiByeT0iMjIiIHdpZHRoPSIyMTAiIGhlaWdodD0iNDQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4xNiIvPjx0ZXh0IHg9IjM2NSIgeT0iMzQwIj5Cb29rIGFoZWFkPC90ZXh0PjxyZWN0IHg9IjU2NSIgeT0iMzEwIiByeD0iMjIiIHJ5PSIyMiIgd2lkdGg9IjIxMCIgaGVpZ2h0PSI0NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjE2Ii8+PHRleHQgeD0iNTk1IiB5PSIzNDAiPkxvdyBzdHJlc3M8L3RleHQ+PHJlY3QgeD0iNzkwIiB5PSIzMTAiIHJ4PSIyMiIgcnk9IjIyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTYiLz48dGV4dCB4PSI4MTgiIHk9IjM0MCI+QmVzdGllLWFwcHJvdmVkPC90ZXh0PjwvZz4KPC9zdmc+"></div>
+            <div class="content">
+              <div class="title">🏛 Natural History Museum</div>
+              <div class="meta">Free timed entry, but keep it tight: Hintze Hall, architecture, dinosaurs, then out before museum fatigue hits.<br>
+              🔗 <a href="https://www.nhm.ac.uk/visit.html">Official / booking link</a> • 💰 Free timed entry</div>
+            </div>
+          </div>
+          <div class="attraction">
+            <div class="img"><img alt="Icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDUyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLwn6qpIEFCQkEgVm95YWdlIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeDI9IjEiIHkxPSIwIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWM0ODk5IiBzdG9wLW9wYWNpdHk9Ii45NSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBlYTVlOSIgc3RvcC1vcGFjaXR5PSIuODUiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iciIgY3g9IjcwJSIgY3k9IjMwJSIgcj0iNzAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjIyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjxmaWx0ZXIgaWQ9InMiIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2QtY29sb3I9IiMwMDAiIGZsb29kLW9wYWNpdHk9Ii4yNSIvPjwvZmlsdGVyPjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNTIwIiBmaWxsPSJ1cmwoI2cpIi8+PHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNTIwIiBmaWxsPSJ1cmwoI3IpIi8+CjxnIG9wYWNpdHk9Ii4yNSIgZmlsbD0iIzBiMTIyMCI+PHJlY3QgeD0iMCIgeT0iMzYwIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIxNjAiLz48cmVjdCB4PSI2MCIgeT0iMzAwIiB3aWR0aD0iOTAiIGhlaWdodD0iMjIwIi8+PHJlY3QgeD0iMTcwIiB5PSIyNjAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMjYwIi8+PHJlY3QgeD0iMzEwIiB5PSIyODAiIHdpZHRoPSI3NSIgaGVpZ2h0PSIyNDAiLz48cmVjdCB4PSI0MTAiIHk9IjI0MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyODAiLz48cmVjdCB4PSI1NzAiIHk9IjI4NSIgd2lkdGg9Ijk1IiBoZWlnaHQ9IjIzNSIvPjxyZWN0IHg9IjY5MCIgeT0iMjU1IiB3aWR0aD0iMTU1IiBoZWlnaHQ9IjI2NSIvPjxyZWN0IHg9Ijg3MCIgeT0iMjk1IiB3aWR0aD0iMTA1IiBoZWlnaHQ9IjIyNSIvPjxyZWN0IHg9IjEwMDAiIHk9IjI3MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIyNTAiLz48L2c+CjxnIGZpbHRlcj0idXJsKCNzKSI+PGNpcmNsZSBjeD0iMTcwIiBjeT0iMTgwIiByPSIxMjAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4xNiIvPjxjaXJjbGUgY3g9IjE3MCIgY3k9IjE4MCIgcj0iOTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxMCIgb3BhY2l0eT0iLjciLz48dGV4dCB4PSIxMjMiIHk9IjIwMiIgZm9udC1mYW1pbHk9InN5c3RlbS11aSIgZm9udC1zaXplPSI2OCIgZmlsbD0iI2ZmZiI+8J+qqTwvdGV4dD48L2c+Cjx0ZXh0IHg9IjM0MCIgeT0iMTcwIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBTZWdvZSBVSSwgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsIiBmb250LXNpemU9IjU2IiBmaWxsPSIjZmZmIiBmb250LXdlaWdodD0iODAwIj7wn6qpIEFCQkEgVm95YWdlPC90ZXh0Pgo8dGV4dCB4PSIzNDAiIHk9IjIzNSIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgU2Vnb2UgVUksIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCIgZm9udC1zaXplPSIzMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjkyIiBmb250LXdlaWdodD0iNjAwIj5GcmVzaGVuIHVwIGZpcnN0PC90ZXh0Pgo8ZyBmb250LWZhbWlseT0ic3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBTZWdvZSBVSSwgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsIiBmb250LXNpemU9IjIyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTIiIGZvbnQtd2VpZ2h0PSI3MDAiPjxyZWN0IHg9IjM0MCIgeT0iMzEwIiByeD0iMjIiIHJ5PSIyMiIgd2lkdGg9IjIxMCIgaGVpZ2h0PSI0NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjE2Ii8+PHRleHQgeD0iMzY1IiB5PSIzNDAiPkJvb2sgYWhlYWQ8L3RleHQ+PHJlY3QgeD0iNTY1IiB5PSIzMTAiIHJ4PSIyMiIgcnk9IjIyIiB3aWR0aD0iMjEwIiBoZWlnaHQ9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTYiLz48dGV4dCB4PSI1OTUiIHk9IjM0MCI+TG93IHN0cmVzczwvdGV4dD48cmVjdCB4PSI3OTAiIHk9IjMxMCIgcng9IjIyIiByeT0iMjIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNDQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4xNiIvPjx0ZXh0IHg9IjgxOCIgeT0iMzQwIj5CZXN0aWUtYXBwcm92ZWQ8L3RleHQ+PC9nPgo8L3N2Zz4="></div>
+            <div class="content">
+              <div class="title">🪩 ABBA Voyage</div>
+              <div class="meta">A true anchor event. Build in an Airbnb reset before the show so the night feels fun, not frantic.<br>
+              🔗 <a href="https://www.abbavoyage.com/">Official / booking link</a> • 💰 Ticketed</div>
+            </div>
+          </div>
+          <div class="attraction">
+            <div class="img"><img alt="Icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDUyMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLwn6uWIEhhbSBZYXJkIFRlYSI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHgyPSIxIiB5MT0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzIyYzU1ZSIgc3RvcC1vcGFjaXR5PSIuOTUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwZWE1ZTkiIHN0b3Atb3BhY2l0eT0iLjg1Ii8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9InIiIGN4PSI3MCUiIGN5PSIzMCUiIHI9IjcwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4yMiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+PC9yYWRpYWxHcmFkaWVudD48ZmlsdGVyIGlkPSJzIiB4PSItMjAlIiB5PSItMjAlIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIj48ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iMTAiIHN0ZERldmlhdGlvbj0iMTgiIGZsb29kLWNvbG9yPSIjMDAwIiBmbG9vZC1vcGFjaXR5PSIuMjUiLz48L2ZpbHRlcj48L2RlZnM+CjxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjUyMCIgZmlsbD0idXJsKCNnKSIvPjxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjUyMCIgZmlsbD0idXJsKCNyKSIvPgo8ZyBvcGFjaXR5PSIuMjUiIGZpbGw9IiMwYjEyMjAiPjxyZWN0IHg9IjAiIHk9IjM2MCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iMTYwIi8+PHJlY3QgeD0iNjAiIHk9IjMwMCIgd2lkdGg9IjkwIiBoZWlnaHQ9IjIyMCIvPjxyZWN0IHg9IjE3MCIgeT0iMjYwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI2MCIvPjxyZWN0IHg9IjMxMCIgeT0iMjgwIiB3aWR0aD0iNzUiIGhlaWdodD0iMjQwIi8+PHJlY3QgeD0iNDEwIiB5PSIyNDAiIHdpZHRoPSIxNDAiIGhlaWdodD0iMjgwIi8+PHJlY3QgeD0iNTcwIiB5PSIyODUiIHdpZHRoPSI5NSIgaGVpZ2h0PSIyMzUiLz48cmVjdCB4PSI2OTAiIHk9IjI1NSIgd2lkdGg9IjE1NSIgaGVpZ2h0PSIyNjUiLz48cmVjdCB4PSI4NzAiIHk9IjI5NSIgd2lkdGg9IjEwNSIgaGVpZ2h0PSIyMjUiLz48cmVjdCB4PSIxMDAwIiB5PSIyNzAiIHdpZHRoPSIxNDAiIGhlaWdodD0iMjUwIi8+PC9nPgo8ZyBmaWx0ZXI9InVybCgjcykiPjxjaXJjbGUgY3g9IjE3MCIgY3k9IjE4MCIgcj0iMTIwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTYiLz48Y2lyY2xlIGN4PSIxNzAiIGN5PSIxODAiIHI9IjkyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMTAiIG9wYWNpdHk9Ii43Ii8+PHRleHQgeD0iMTIzIiB5PSIyMDIiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWkiIGZvbnQtc2l6ZT0iNjgiIGZpbGw9IiNmZmYiPvCfq5Y8L3RleHQ+PC9nPgo8dGV4dCB4PSIzNDAiIHk9IjE3MCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgU2Vnb2UgVUksIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCIgZm9udC1zaXplPSI1NiIgZmlsbD0iI2ZmZiIgZm9udC13ZWlnaHQ9IjgwMCI+8J+rliBIYW0gWWFyZCBUZWE8L3RleHQ+Cjx0ZXh0IHg9IjM0MCIgeT0iMjM1IiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBTZWdvZSBVSSwgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsIiBmb250LXNpemU9IjMwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTIiIGZvbnQtd2VpZ2h0PSI2MDAiPlNsb3cgbHV4dXJ5IHBhdXNlPC90ZXh0Pgo8ZyBmb250LWZhbWlseT0ic3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBTZWdvZSBVSSwgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsIiBmb250LXNpemU9IjIyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTIiIGZvbnQtd2VpZ2h0PSI3MDAiPjxyZWN0IHg9IjM0MCIgeT0iMzEwIiByeD0iMjIiIHJ5PSIyMiIgd2lkdGg9IjIxMCIgaGVpZ2h0PSI0NCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjE2Ii8+PHRleHQgeD0iMzY1IiB5PSIzNDAiPkJvb2sgYWhlYWQ8L3RleHQ+PHJlY3QgeD0iNTY1IiB5PSIzMTAiIHJ4PSIyMiIgcnk9IjIyIiB3aWR0aD0iMjEwIiBoZWlnaHQ9IjQ0IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTYiLz48dGV4dCB4PSI1OTUiIHk9IjM0MCI+TG93IHN0cmVzczwvdGV4dD48cmVjdCB4PSI3OTAiIHk9IjMxMCIgcng9IjIyIiByeT0iMjIiIHdpZHRoPSIyNjAiIGhlaWdodD0iNDQiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4xNiIvPjx0ZXh0IHg9IjgxOCIgeT0iMzQwIj5CZXN0aWUtYXBwcm92ZWQ8L3RleHQ+PC9nPgo8L3N2Zz4="></div>
+            <div class="content">
+              <div class="title">🫖 Ham Yard Tea</div>
+              <div class="meta">A polished, stylish afternoon tea that fits the vibe and works beautifully before the airport-hotel transition.<br>
+              🔗 <a href="https://www.firmdalehotels.com/restaurants-bars/afternoon-tea/">Official / booking link</a> • 💰 Book ahead</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="h2">🗺️ At-a-glance plan</div>
+        <table>
+          <tr><th>Date</th><th>Base</th><th>Anchor</th><th>Flow</th></tr><tr><td><b>Dec 27</b></td><td>Travel Night</td><td>✈️ IAH → Edinburgh</td><td>Hydrate, sleep when possible, pack one easy arrival outfit.</td></tr><tr><td><b>Dec 28</b></td><td>Edinburgh Arrival + Old Town Orientation</td><td>🏰 First Old Town walk</td><td>Airbnb → Victoria Street → Grassmarket → The Vennel → Royal Mile loop.</td></tr><tr><td><b>Dec 29</b></td><td>Old Town Deep Dive + Ghost Tour</td><td>👻 Royal Mile + evening ghost tour</td><td>Route: Edinburgh Castle exterior → Lawnmarket → Writers’ Museum courtyard → St Giles Cathedral → Heart of Midlothian → Scottish Exchange Design Store → Scottish Textiles Showcase.</td></tr><tr><td><b>Dec 30</b></td><td>Dean Village + Stockbridge + Calton Hill</td><td>🏞 Dean Village to Stockbridge</td><td>Route: Dean Village → Water of Leith path → Stockbridge → Circus Lane → local boutiques/cafés.</td></tr><tr><td><b>Dec 31</b></td><td>Hogmanay Day</td><td>🎆 Islander + NYE</td><td>Morning: sleep in + coffee.</td></tr><tr><td><b>Jan 1</b></td><td>Recovery + Leith</td><td>🌊 The Shore + local shopping</td><td>Route: taxi/tram toward Leith → The Shore → cafés/wine bars → Tartan Blanket Co. showroom.</td></tr><tr><td><b>Jan 2</b></td><td>Train to London + Soho Intro</td><td>🚆 Edinburgh → London</td><td>Train: Edinburgh Waverley → London King’s Cross via LNER.</td></tr><tr><td><b>Jan 3</b></td><td>Westminster + Thames + London Eye</td><td>🎡 Big Ben, Thames, London Eye</td><td>Route: Westminster Station → Big Ben/Parliament photos → Westminster Abbey exterior or timed-entry visit → Westminster Bridge → South Bank walk.</td></tr><tr><td><b>Jan 4</b></td><td>Natural History Museum + Knightsbridge</td><td>🏛 Museum + Hyde Park zone</td><td>Route: South Kensington → Natural History Museum → optional V&A exterior/café → Hyde Park edge → Harrods/Knightsbridge.</td></tr><tr><td><b>Jan 5</b></td><td>Borough Market + Reset + ABBA Voyage</td><td>🪩 ABBA Voyage night</td><td>Morning route: Borough Market → London Bridge → Thames views.</td></tr><tr><td><b>Jan 6</b></td><td>Covent Garden + Royal Historic Pubs Tour</td><td>🍺 Pub tour at 2:30 PM</td><td>Route: Leicester Square → Covent Garden Market Hall → Neal’s Yard → Seven Dials → pub tour meeting area.</td></tr><tr><td><b>Jan 7</b></td><td>Notting Hill + Ham Yard Tea + Heathrow Hotel</td><td>🫖 Tea + airport-hotel transition</td><td>Drop luggage near Leicester Square/Covent Garden, then Tube to Notting Hill around 10:45–11:00 AM.</td></tr><tr><td><b>Jan 8</b></td><td>Departure Day</td><td>✈️ LHR → IAH</td><td>Breakfast at hotel or airport.</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="h2">✅ Book-first list (so we don’t get boxed out)</div>
+        <div class="p"><b>Book in this order:</b> flights, Edinburgh/London accommodations already held, Heathrow hotel, Edinburgh → London train, Hogmanay, ABBA Voyage, Ham Yard tea, London Eye sunset/Fast Track, Islander workshop, ghost tour, The Dome, pub tour, timed museum entries.</div>
+        <span class="pill">ABBA before anything flexible</span>
+        <span class="pill">Hogmanay early</span>
+        <span class="pill">London Eye sunset</span>
+        <span class="pill">Luggage plan Jan 7</span>
+      </div>
+
+      <div class="card">
+        <div class="h2">📅 Daily itinerary — mapped flow + nearby options</div>
+
+        <div class="divider"></div>
+        <div class="day-title">Dec 27 — Travel Night</div>
+        <div class="p"><span class="anchor">ANCHOR:</span> ✈️ IAH → Edinburgh</div>
+        <div class="p"><b>Timing:</b> Depart IAH afternoon/evening. Overnight flight strategy is correct: arrive, clear customs, and aim to be in Edinburgh by about 1:00 PM on Dec 28.</div>
+        <ul><li>Hydrate, sleep when possible, pack one easy arrival outfit.</li><li>Keep meds, chargers, and scarf/gloves in personal item.</li></ul>
+        <div class="divider"></div>
+        <div class="day-title">Dec 28 — Edinburgh Arrival + Old Town Orientation</div>
+        <div class="p"><span class="anchor">ANCHOR:</span> 🏰 First Old Town walk</div>
+        <div class="p"><b>Timing:</b> Aim to be through customs and on your way by ~1:00 PM. Check in, drop bags, and start around 4:30 PM only if energy is there.</div>
+        <ul><li>Airbnb → Victoria Street → Grassmarket → The Vennel → Royal Mile loop.</li><li>What you’ll pass: colorful Victoria Street facades, castle views, Grassmarket pubs, Royal Mile shops.</li><li>Dinner: Makars Mash Bar if booked, or The Last Drop / Deacon Brodie’s for easy pub energy.</li></ul>
+        <div class="divider"></div>
+        <div class="day-title">Dec 29 — Old Town Deep Dive + Ghost Tour</div>
+        <div class="p"><span class="anchor">ANCHOR:</span> 👻 Royal Mile + evening ghost tour</div>
+        <div class="p"><b>Timing:</b> Start around 9:00 AM to enjoy the Royal Mile before it gets thick. Keep the day walkable from the Airbnb.</div>
+        <ul><li>Route: Edinburgh Castle exterior → Lawnmarket → Writers’ Museum courtyard → St Giles Cathedral → Heart of Midlothian → Scottish Exchange Design Store → Scottish Textiles Showcase.</li><li>Lunch: Deacon Brodie’s Tavern or casual Royal Mile café.</li><li>Afternoon: Grassmarket drink or Scottish National Gallery if weather turns.</li><li>Night: small-group ghost tour; book ahead.</li></ul>
+        <div class="divider"></div>
+        <div class="day-title">Dec 30 — Dean Village + Stockbridge + Calton Hill</div>
+        <div class="p"><span class="anchor">ANCHOR:</span> 🏞 Dean Village to Stockbridge</div>
+        <div class="p"><b>Timing:</b> Start around 9:30 AM. This is your soft, beautiful day with the best mix of scenery and local neighborhood wandering.</div>
+        <ul><li>Route: Dean Village → Water of Leith path → Stockbridge → Circus Lane → local boutiques/cafés.</li><li>Coffee options: Artisan Roast or Cowan & Sons.</li><li>If energy/weather are good: Calton Hill for sunset overlook.</li><li>If rainy: Scottish National Gallery or Bonnie & Wild food hall.</li></ul>
+        <div class="divider"></div>
+        <div class="day-title">Dec 31 — Hogmanay Day</div>
+        <div class="p"><span class="anchor">ANCHOR:</span> 🎆 Islander + NYE</div>
+        <div class="p"><b>Timing:</b> Keep the daytime intentionally light. NYE crowds and weather will take energy.</div>
+        <ul><li>Morning: sleep in + coffee.</li><li>Midday: Islander Harris Tweed bag workshop — book ahead.</li><li>Afternoon: return to Airbnb, rest, layer up.</li><li>Sunset: Calton Hill if not too crowded/windy.</li><li>Night: Hogmanay Street Party OR dinner + fireworks plan.</li></ul>
+        <div class="divider"></div>
+        <div class="day-title">Jan 1 — Recovery + Leith</div>
+        <div class="p"><span class="anchor">ANCHOR:</span> 🌊 The Shore + local shopping</div>
+        <div class="p"><b>Timing:</b> Start late, around 11:00 AM. No guilt, no hard morning commitments.</div>
+        <ul><li>Route: taxi/tram toward Leith → The Shore → cafés/wine bars → Tartan Blanket Co. showroom.</li><li>Support stops: relaxed lunch, harbor walk, small boutiques.</li><li>Return early evening to chill and pack for train day.</li></ul>
+        <div class="divider"></div>
+        <div class="day-title">Jan 2 — Train to London + Soho Intro</div>
+        <div class="p"><span class="anchor">ANCHOR:</span> 🚆 Edinburgh → London</div>
+        <div class="p"><b>Timing:</b> Book a ~10:00 AM train if possible. Arrive London mid-afternoon, check in, then keep the first London night easy.</div>
+        <ul><li>Train: Edinburgh Waverley → London King’s Cross via LNER.</li><li>After check-in route: Leicester Square → Piccadilly Circus → Soho wander grid.</li><li>Dinner: Soho/Covent Garden zone; keep flexible.</li></ul>
+        <div class="divider"></div>
+        <div class="day-title">Jan 3 — Westminster + Thames + London Eye</div>
+        <div class="p"><span class="anchor">ANCHOR:</span> 🎡 Big Ben, Thames, London Eye</div>
+        <div class="p"><b>Timing:</b> Start around 9:00 AM. This is your iconic London day, mapped so you naturally see the high points without zig-zagging.</div>
+        <ul><li>Route: Westminster Station → Big Ben/Parliament photos → Westminster Abbey exterior or timed-entry visit → Westminster Bridge → South Bank walk.</li><li>What you’ll pass on South Bank: Thames views, street performers, food kiosks, book stalls, river photo points.</li><li>Anchor: London Eye at dusk/sunset; Fast Track recommended if crowds are heavy.</li><li>Dinner: South Bank or return to Soho.</li></ul>
+        <div class="divider"></div>
+        <div class="day-title">Jan 4 — Natural History Museum + Knightsbridge</div>
+        <div class="p"><span class="anchor">ANCHOR:</span> 🏛 Museum + Hyde Park zone</div>
+        <div class="p"><b>Timing:</b> Start around 9:30 AM. Book free timed museum entry and keep the museum visit to 1.5–2 hours.</div>
+        <ul><li>Route: South Kensington → Natural History Museum → optional V&A exterior/café → Hyde Park edge → Harrods/Knightsbridge.</li><li>Focus inside NHM: Hintze Hall, dinosaurs, architecture.</li><li>Support: Harrods Food Halls, Hyde Park winter walk, Knightsbridge window shopping.</li></ul>
+        <div class="divider"></div>
+        <div class="day-title">Jan 5 — Borough Market + Reset + ABBA Voyage</div>
+        <div class="p"><span class="anchor">ANCHOR:</span> 🪩 ABBA Voyage night</div>
+        <div class="p"><b>Timing:</b> Start around 10:00 AM. This day now includes a protected Airbnb reset before the show.</div>
+        <ul><li>Morning route: Borough Market → London Bridge → Thames views.</li><li>Leave Borough around 1:30–2:00 PM and return to Airbnb by ~2:30 PM.</li><li>Protected reset: 2:30–4:30 PM to rest, freshen up, outfit change, recharge.</li><li>Leave Airbnb around 5:30–6:00 PM by Tube or Uber; arrive 30–45 min early.</li><li>Night anchor: ABBA Voyage. No late-night overplanning afterward.</li></ul>
+        <div class="divider"></div>
+        <div class="day-title">Jan 6 — Covent Garden + Royal Historic Pubs Tour</div>
+        <div class="p"><span class="anchor">ANCHOR:</span> 🍺 Pub tour at 2:30 PM</div>
+        <div class="p"><b>Timing:</b> Start around 10:00 AM. This day stays in your home-zone so the 2:30 tour slot is easy.</div>
+        <ul><li>Route: Leicester Square → Covent Garden Market Hall → Neal’s Yard → Seven Dials → pub tour meeting area.</li><li>What you’ll pass: street performers, boutique lanes, Covent Garden shops, theater district corners.</li><li>Anchor: GetYourGuide Royal Historic Pubs Walking Tour at 2:30 PM.</li><li>Evening: dinner back in Soho/Covent Garden.</li></ul>
+        <div class="divider"></div>
+        <div class="day-title">Jan 7 — Notting Hill + Ham Yard Tea + Heathrow Hotel</div>
+        <div class="p"><span class="anchor">ANCHOR:</span> 🫖 Tea + airport-hotel transition</div>
+        <div class="p"><b>Timing:</b> Pack early. Check out by 10:00–10:30 AM; London Airbnb checkout is before 11:00 AM. Store luggage with host if allowed, otherwise use Stasher/LuggageHero near Leicester Square.</div>
+        <ul><li>Drop luggage near Leicester Square/Covent Garden, then Tube to Notting Hill around 10:45–11:00 AM.</li><li>Route: Notting Hill Gate → Portobello Road → colorful side streets → boutiques → café stop.</li><li>Return central around 1:30 PM for Ham Yard Hotel afternoon tea at 2:30–3:00 PM.</li><li>Retrieve luggage around 4:30–5:00 PM; leave central London for Heathrow hotel around 5:30–6:00 PM.</li><li>Transport: Piccadilly Line to Heathrow or Uber/taxi if luggage/weather makes Tube annoying.</li></ul>
+        <div class="divider"></div>
+        <div class="day-title">Jan 8 — Departure Day</div>
+        <div class="p"><span class="anchor">ANCHOR:</span> ✈️ LHR → IAH</div>
+        <div class="p"><b>Timing:</b> Wake up already at the airport hotel. This protects the final morning and avoids a stressful cross-London transfer.</div>
+        <ul><li>Breakfast at hotel or airport.</li><li>Arrive at terminal with plenty of cushion for international departure.</li><li>No sightseeing scheduled — this is exactly why the airport hotel was smart.</li></ul>
+      </div>
+
+      <div class="card">
+        <div class="h2">🎟️ Ticket + reservation links</div>
+        <table>
+          <tr><th>Item</th><th>Link</th></tr><tr><td>Flights: multi-city search</td><td><a href="https://www.google.com/travel/flights">https://www.google.com/travel/flights</a></td></tr><tr><td>LNER train Edinburgh → London</td><td><a href="https://www.lner.co.uk/">https://www.lner.co.uk/</a></td></tr><tr><td>Edinburgh Hogmanay</td><td><a href="https://www.edinburghshogmanay.com/">https://www.edinburghshogmanay.com/</a></td></tr><tr><td>Islander Harris Tweed Experience</td><td><a href="https://islanderuk.com/pages/in-store-experience">https://islanderuk.com/pages/in-store-experience</a></td></tr><tr><td>Edinburgh ghost tours</td><td><a href="https://www.getyourguide.com/edinburgh-l44/ghost-tour/">https://www.getyourguide.com/edinburgh-l44/ghost-tour/</a></td></tr><tr><td>Makars Mash Bar</td><td><a href="https://makarsmashbar.com/">https://makarsmashbar.com/</a></td></tr><tr><td>The Dome Edinburgh</td><td><a href="https://www.thedomeedinburgh.com/">https://www.thedomeedinburgh.com/</a></td></tr><tr><td>London Eye tickets / Fast Track</td><td><a href="https://www.londoneye.com/tickets-and-prices/">https://www.londoneye.com/tickets-and-prices/</a></td></tr><tr><td>Natural History Museum timed entry</td><td><a href="https://www.nhm.ac.uk/visit.html">https://www.nhm.ac.uk/visit.html</a></td></tr><tr><td>ABBA Voyage tickets</td><td><a href="https://www.abbavoyage.com/">https://www.abbavoyage.com/</a></td></tr><tr><td>Ham Yard Hotel afternoon tea</td><td><a href="https://www.firmdalehotels.com/restaurants-bars/afternoon-tea/">https://www.firmdalehotels.com/restaurants-bars/afternoon-tea/</a></td></tr><tr><td>Sky Garden reservations</td><td><a href="https://skygarden.london/">https://skygarden.london/</a></td></tr><tr><td>Royal Historic Pubs Walking Tour</td><td><a href="https://www.getyourguide.com/london-l57/london-royal-historic-pubs-walking-tour-t2026/">https://www.getyourguide.com/london-l57/london-royal-historic-pubs-walking-tour-t2026/</a></td></tr><tr><td>Stasher luggage storage</td><td><a href="https://stasher.com/">https://stasher.com/</a></td></tr><tr><td>LuggageHero luggage storage</td><td><a href="https://luggagehero.com/">https://luggagehero.com/</a></td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="h2">💰 Budget snapshot — per person estimate</div>
+        <table>
+          <tr><th>Category</th><th>Estimated range per person</th><th>Notes</th></tr>
+          <tr><td>Flights</td><td>$900–$1,400</td><td>Open-jaw: IAH → EDI / LHR → IAH</td></tr>
+          <tr><td>Lodging</td><td>$1,500–$2,000</td><td>Airbnbs + Heathrow hotel estimate, split by 2</td></tr>
+          <tr><td>Activities</td><td>$350–$550</td><td>ABBA, London Eye, tours, workshop, tea, misc paid entries</td></tr>
+          <tr><td>Food + drinks</td><td>$900–$1,300</td><td>Casual/local with a few nicer moments</td></tr>
+          <tr><td>Transport</td><td>$180–$300</td><td>Train, Tube/contactless, occasional Uber/taxi</td></tr>
+          <tr><td><b>Total</b></td><td><b>$3,830–$5,550</b></td><td><b>Inside the $4K–$6K target, depending airfare and dining choices</b></td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="h2">🎒 Jan 7 luggage + Heathrow transition lock</div>
+        <div class="p">Check out of the London Airbnb by 10:00–10:30 AM, with 11:00 AM as the latest checkout boundary. Ask the host first about holding luggage; backup is Stasher or LuggageHero near Leicester Square/Covent Garden. After Notting Hill and Ham Yard tea, retrieve bags around 4:30–5:00 PM and leave central London around 5:30–6:00 PM for the Heathrow hotel.</div>
+        <span class="pill">Host hold first</span>
+        <span class="pill">Stasher/LuggageHero backup</span>
+        <span class="pill">Heathrow hotel by ~7–8 PM</span>
+      </div>
+
+      <div class="foot">DLG Signature HTML Export • Locked after Phase 3 • Generated for Patty / DLG</div>
+    </div>
+  </div>
+</body>
+</html>
