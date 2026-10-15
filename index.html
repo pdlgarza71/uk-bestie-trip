@@ -84,6 +84,18 @@
   li { margin: 5px 0; }
   .day-title { font-size: 18px; font-weight: 950; margin: 0 0 4px; }
   .anchor { font-weight: 900; color: var(--ink); }
+
+  /* Keep the existing design within narrow phone screens. */
+  .card, .attraction .content { min-width: 0; }
+  @media (max-width: 600px) {
+    .row { grid-template-columns: minmax(0, 1fr); }
+    .attraction { grid-template-columns: 90px minmax(0, 1fr); }
+    .attraction img { width: 70px; height: 70px; }
+    table { table-layout: fixed; }
+    th, td, .p, .meta, a { overflow-wrap: anywhere; }
+    th, td { padding: 8px 6px; }
+    .pill { max-width: 100%; box-sizing: border-box; }
+  }
 </style>
 </head>
 <body>
